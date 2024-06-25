@@ -26,3 +26,12 @@ test('ProjectStatus: renders with projects', () => {
 
   expect(baseElement).toMatchSnapshot();
 });
+
+test('time and memory', async () => {
+  let s = '';
+  for (let i=0; i<10_000_000; i++) {
+    s += i;
+  }
+  await new Promise((res) => setTimeout(res, 5000));
+  expect(s).toBeTruthy();
+});
