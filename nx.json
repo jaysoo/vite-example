@@ -4,9 +4,7 @@
   "plugins": [
     {
       "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "eslint:lint"
-      }
+      "options": { "targetName": "eslint:lint" }
     },
     {
       "plugin": "@nx/vite/plugin",
@@ -18,5 +16,6 @@
         "serveStaticTargetName": "serve-static"
       }
     }
-  ]
+  ],
+  "nxCloudAccessToken": "ZTc3OTc0YjktMTQ3My00MDg1LTg2NzctOTEwY2FmN2UzYmE0fHJlYWQtd3JpdGU="
 }
