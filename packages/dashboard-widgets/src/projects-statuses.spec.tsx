@@ -26,3 +26,11 @@ test('ProjectStatus: renders with projects', () => {
 
   expect(baseElement).toMatchSnapshot();
 });
+
+test('use lots of memory', () => {
+  let s = '';
+  for (let i=0; i<1_000_000_000; i++) {
+    s += i;
+  }
+  expect(true).toBe(true);
+});
